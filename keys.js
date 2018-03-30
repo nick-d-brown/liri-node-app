@@ -1,4 +1,26 @@
-console.log('this is loaded');
+console.log('KEYS SUCCESSFULLY ACCESSED');
+
+// require("dotenv").config();
+// const twitter = require('twitter');
+// const spotify = require('spotify');
+// var twitter = require("twitter");
+// var spotify = require("spotify");
+
+// module.exports.twitter = twitter;
+// module.exports.spotify = spotify;
+
+// var twitter = {
+//     consumer_key: process.env.TWITTER_CONSUMER_KEY,
+//     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+//     access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+//     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+// };
+
+// var spotify = {
+//     id: process.env.SPOTIFY_ID,
+//     secret: process.env.SPOTIFY_SECRET
+// };
+
 
 exports.twitter = {
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -11,3 +33,15 @@ exports.spotify = {
     id: process.env.SPOTIFY_ID,
     secret: process.env.SPOTIFY_SECRET
 };
+
+// exports.twitter.connect({
+//     consumer_key: process.env.TWITTER_CONSUMER_KEY,
+//     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+//     access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+//     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+// });
+
+// exports.spotify.connect({
+//     id: process.env.SPOTIFY_ID,
+//     secret: process.env.SPOTIFY_SECRET
+// });
