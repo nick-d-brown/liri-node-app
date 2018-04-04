@@ -18,13 +18,6 @@ A node application utilizing npm packages, Vanilla JavaScript and web APIs.
 
 This application utilizes Node.js, web APIs and Vanilla JavaScript logic to access tweets from a user's account, research information on a specific song, or gather information on a requested movie. It ties together the ability to use web APIs to access JSON formated data to the display to the user. Through the addition of the dotenv, request, node-spotify, and twitter npm packages and the OMDB API this app can access the requested data, while keeping the user's API keys and secrets safe.  
 
-> **Note:** Below is an image of the landing page for the project.
-
-
-
-
-![Book image](https://github.com/nick-d-brown/Basic-Portfolio-html_css/blob/master/images/2-sanddunes.jpg?raw=true)
-
 
 ---
 
@@ -51,14 +44,16 @@ This application utilizes Node.js, web APIs and Vanilla JavaScript logic to acce
 
 > **Note:** This section is meant for beginners an idea of what the *crux* technology was for this project. Ideally by seeing this first they will be able tackle the hard problem first to start the learning/absorption process as soon as possible.
 
-Throughout this project there was only one challenge the proved to be tricky to handle, ___________________. ________ was a new technology to take on and after spending a good amount of time in the documentation I started to grasp it. My advice would be start early. Use the links listed below to learn more about the technology and remember **you will eventually learn how everything works!**
+The most challenging part of this project was learning the proper sytax for exporting and importing .js files and their contents into other files. In addition to this, learning to work with the Twitter an Spotify APIs required aa little more work than expected to access the necessary information. 
+
+My advice would be start early. Use the links listed below to learn more about the technology and remember **you will eventually learn how everything works!**
 
 ---**Suggested Links**---
 
--[Link1]()
--[Link1]()
--[Link1]()
--[Link1]()
+-[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+-[https://developer.twitter.com/en/docs/tweets/post-and-engage/overview](https://developer.twitter.com/en/docs/tweets/post-and-engage/overview)
+-[https://beta.developer.spotify.com/documentation/web-api/](https://beta.developer.spotify.com/documentation/web-api/)
+
 
 ### 4-Issues :question::exclamation:
 
