@@ -38,7 +38,7 @@ if (liriOpp === 'my-tweets') {
                 console.log("====Tweet number " + tweetNumber + "====" + "\n");
                 tweetNumber++;            
                 console.log(tweets[i].created_at +             
-                    + "\n" + tweets[i].text + "\n");
+                     "\n" + "\n" + tweets[i].text + "\n");
             }
             console.log("========================" + "\n");
         } else {
@@ -136,7 +136,7 @@ else if (liriOpp === 'do-what-it-says') {
         if (err) {
             return console.log(err);
         }
-        
+
         var output = info.split(",");
 
         spotify.search({ type: 'track', query: output[1], limit: 1 }, function (err, data) {
