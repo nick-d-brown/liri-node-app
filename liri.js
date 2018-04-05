@@ -5,7 +5,6 @@ var request = require("request");
 var Twitter = require("twitter");
 var Spotify = require("node-spotify-api");
 var keys = require("./keys");
-var fs = require("fs");
 // API Key links
 
 var spotify = new Spotify(keys.spotify);
@@ -69,8 +68,6 @@ else if (liriOpp === 'spotify-this-song') {
                     }  
                 }
 
-
-        // console.log(data.tracks.items);
         
         console.log("====== Your Song =======" + "\n");
        
@@ -96,7 +93,8 @@ else if (liriOpp === 'movie-this') {
         let OMDBApi = "http://www.omdbapi.com/?t=" + movieRequest + "&apikey=587c29c0";
         request(OMDBApi, function (error, response, body) {
             if (!error && response.statusCode === 200) {
-                console.log("====== Your Song =======" + "\n");
+
+                console.log("====== Your Movie =======" + "\n");
                 console.log("Movie Title -> " + JSON.parse(body).Title +
                     "\nRelease Date -> " + JSON.parse(body).Released +
                     "\nMovie IMDB Rating -> " + JSON.parse(body).imdbRating +
@@ -113,7 +111,7 @@ else if (liriOpp === 'movie-this') {
 
         request(OMDBApi, function (error, response, body) {
             if (!error && response.statusCode === 200) {
-                console.log("====== Your Song =======" + "\n");
+                console.log("====== Your Movie =======" + "\n");
                 console.log("Movie Title -> " + JSON.parse(body).Title+
                 "\nRelease Date -> " + JSON.parse(body).Released+
                 "\nMovie IMDB Rating -> " + JSON.parse(body).imdbRating+
