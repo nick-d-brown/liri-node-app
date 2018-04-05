@@ -94,11 +94,18 @@ else if (liriOpp === 'movie-this') {
         request(OMDBApi, function (error, response, body) {
             if (!error && response.statusCode === 200) {
 
+                var rottenTomatoes = "";
+                if (!JSON.parse(body).Ratings[1]) {
+                    rottenTomatoes = "Sorry there is no Rotten Tomatoes score."
+                } else {
+                    rottenTomatoes = JSON.parse(body).Ratings[1].Value;
+                }
+
                 console.log("====== Your Movie =======" + "\n");
                 console.log("Movie Title -> " + JSON.parse(body).Title +
                     "\nRelease Date -> " + JSON.parse(body).Released +
                     "\nMovie IMDB Rating -> " + JSON.parse(body).imdbRating +
-                    "\nMovie Rotten Tomatoes Score -> " + JSON.parse(body).Ratings[1].Value +
+                    "\nMovie Rotten Tomatoes Score -> " + rottenTomatoes +
                     "\nCountry where movie was produced -> " + JSON.parse(body).Country +
                     "\nMovie Language -> " + JSON.parse(body).Language +
                     "\nMovie Plot -> " + JSON.parse(body).Plot +
@@ -111,11 +118,19 @@ else if (liriOpp === 'movie-this') {
 
         request(OMDBApi, function (error, response, body) {
             if (!error && response.statusCode === 200) {
+
+                var rottenTomatoes = "";
+                if (!JSON.parse(body).Ratings[1]) {
+                    rottenTomatoes = "Sorry there is no Rotten Tomatoes score."
+                } else {
+                    rottenTomatoes = JSON.parse(body).Ratings[1].Value;
+                }
+
                 console.log("====== Your Movie =======" + "\n");
                 console.log("Movie Title -> " + JSON.parse(body).Title+
                 "\nRelease Date -> " + JSON.parse(body).Released+
                 "\nMovie IMDB Rating -> " + JSON.parse(body).imdbRating+
-                "\nMovie Rotten Tomatoes Score -> " + JSON.parse(body).Ratings[1].Value+
+                    "\nMovie Rotten Tomatoes Score -> " + rottenTomatoes+
                 "\nCountry where movie was produced -> " + JSON.parse(body).Country+
                 "\nMovie Language -> " + JSON.parse(body).Language+
                 "\nMovie Plot -> " + JSON.parse(body).Plot+
